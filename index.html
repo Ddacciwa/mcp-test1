@@ -1,21 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- 한글 주석: 스타일 시트 연결 -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=445, initial-scale=1.0">
+  <title>iOS Navigation</title>
+  <!-- 외부 CSS 파일 연결 -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 한글 주석: 메인 컨테이너 -->
-    <div id="main-container">
-        <h1>안녕하세요!</h1>
-        <!-- 한글 주석: 설명 텍스트 -->
-        <p>이 페이지는 테스트용입니다.</p>
+  <!-- 전체 프레임 컨테이너 -->
+  <div class="ios-navigation-frame">
+    <!-- 상태바 영역 -->
+    <div class="status-bar">
+      <span class="status-bar-text">iOS/Status Bar/Black</span>
     </div>
-    <!-- 한글 주석: 자바스크립트 파일 연결 -->
-    <script src="script.js"></script>
+    <!-- 헤더 영역 -->
+    <header class="header">
+      <span class="header-ios">iOS</span>
+      <h1 class="header-title">iOS Navigation</h1>
+    </header>
+    <!-- 페이지 헤더 (상단 네비게이션) -->
+    <nav class="page-header">
+      <span class="nav-left">Left</span>
+      <span class="nav-title">Sign Up</span>
+      <span class="nav-right">Right</span>
+      <button class="close-btn" aria-label="닫기">
+        <!-- X 아이콘 (SVG로 대체) -->
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="2" y1="2" x2="14" y2="14" stroke="#bdbdbd" stroke-width="2"/>
+          <line x1="14" y1="2" x2="2" y2="14" stroke="#bdbdbd" stroke-width="2"/>
+        </svg>
+      </button>
+    </nav>
+    <!-- 본문 내용 (여기서는 생략) -->
+    <!-- 하단 바 -->
+    <footer class="bottom-bar">
+      <div class="tabs">
+        <div class="tab active"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+      </div>
+      <div class="home-indicator"></div>
+    </footer>
+  </div>
 </body>
-</html>
+</html> 
